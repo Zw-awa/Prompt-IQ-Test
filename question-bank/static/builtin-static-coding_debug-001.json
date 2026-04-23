@@ -1,0 +1,44 @@
+{
+  "id": "builtin-static-coding_debug-001",
+  "source": "builtin",
+  "assessment_mode": "static",
+  "task_type": "coding_debug",
+  "scope_fit": [
+    "full"
+  ],
+  "title": "把一个模糊 Bug 求助写成可调试 Prompt",
+  "version_info": {
+    "question_schema_version": "question-schema-v1",
+    "question_version": "q-1",
+    "rubric_version": "rubric-v1",
+    "generator_version": null
+  },
+  "visible_prompt": {
+    "task": "你要让 AI 帮你排查一个 Web 接口偶发返回 500 的问题。",
+    "requirements": [
+      "需要让 AI 明白它应如何分析问题",
+      "需要定义输出结构",
+      "需要避免只给空泛建议"
+    ]
+  },
+  "hidden_reference": {
+    "dimension_focus": {
+      "clarity_output": 20,
+      "structuring": 20,
+      "context_constraints": 36,
+      "gap_risk": 16,
+      "iteration_acceptance": 8
+    },
+    "ideal_elements": [
+      "写清系统背景和接口职责",
+      "提供错误现象、复现条件或日志期望",
+      "定义排查步骤输出结构",
+      "要求区分已知信息和待确认信息"
+    ],
+    "completion_criteria": [
+      "Prompt 不能只写“帮我看看为什么 500”这类模糊请求",
+      "Prompt 需要体现可调试上下文和输出格式"
+    ],
+    "notes_for_evaluator": "本题优先看背景补全与缺失条件意识。"
+  }
+}

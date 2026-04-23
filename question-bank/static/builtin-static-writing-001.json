@@ -1,0 +1,44 @@
+{
+  "id": "builtin-static-writing-001",
+  "source": "builtin",
+  "assessment_mode": "static",
+  "task_type": "writing",
+  "scope_fit": [
+    "fun",
+    "full"
+  ],
+  "title": "将客户道歉邮件需求写成高质量 Prompt",
+  "version_info": {
+    "question_schema_version": "question-schema-v1",
+    "question_version": "q-1",
+    "rubric_version": "rubric-v1",
+    "generator_version": null
+  },
+  "visible_prompt": {
+    "task": "你要让一个 AI 帮你写一封正式但不生硬的道歉邮件。",
+    "requirements": [
+      "目标对象是重要客户",
+      "不能显得推卸责任",
+      "语气要真诚"
+    ]
+  },
+  "hidden_reference": {
+    "dimension_focus": {
+      "clarity_output": 30,
+      "structuring": 18,
+      "context_constraints": 32,
+      "gap_risk": 10,
+      "iteration_acceptance": 10
+    },
+    "ideal_elements": [
+      "明确收件对象与关系",
+      "说明事件背景",
+      "定义邮件结构",
+      "限制禁止内容"
+    ],
+    "completion_criteria": [
+      "Prompt 至少定义目标、对象、背景、语气、输出结构五类信息"
+    ],
+    "notes_for_evaluator": "重点看背景完整性和输出格式定义。"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "builtin-static-daily_qa-001",
+  "source": "builtin",
+  "assessment_mode": "static",
+  "task_type": "daily_qa",
+  "scope_fit": [
+    "fun",
+    "full"
+  ],
+  "title": "把零散会议记录整理成可执行摘要 Prompt",
+  "version_info": {
+    "question_schema_version": "question-schema-v1",
+    "question_version": "q-1",
+    "rubric_version": "rubric-v1",
+    "generator_version": null
+  },
+  "visible_prompt": {
+    "task": "你要让 AI 帮你整理一份部门周会记录，但原始信息会很零散。",
+    "requirements": [
+      "输出需要分成决策、待办、风险三部分",
+      "要提醒 AI 标记不确定信息",
+      "要控制语言简洁"
+    ]
+  },
+  "hidden_reference": {
+    "dimension_focus": {
+      "clarity_output": 28,
+      "structuring": 24,
+      "context_constraints": 28,
+      "gap_risk": 12,
+      "iteration_acceptance": 8
+    },
+    "ideal_elements": [
+      "定义输入材料特征",
+      "定义输出分栏",
+      "要求标注不确定项",
+      "要求语言风格简洁"
+    ],
+    "completion_criteria": [
+      "Prompt 明确了原始材料零散这一背景",
+      "Prompt 明确了输出栏位和不确定项处理方式"
+    ],
+    "notes_for_evaluator": "不要只看摘要目标，要看用户是否主动补足输出结构。"
+  }
+}

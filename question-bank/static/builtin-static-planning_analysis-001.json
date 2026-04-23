@@ -1,0 +1,43 @@
+{
+  "id": "builtin-static-planning_analysis-001",
+  "source": "builtin",
+  "assessment_mode": "static",
+  "task_type": "planning_analysis",
+  "scope_fit": [
+    "full"
+  ],
+  "title": "把模糊活动策划需求写成可执行 Prompt",
+  "version_info": {
+    "question_schema_version": "question-schema-v1",
+    "question_version": "q-1",
+    "rubric_version": "rubric-v1",
+    "generator_version": null
+  },
+  "visible_prompt": {
+    "task": "你要让 AI 帮你做一个校园公开分享活动的执行方案。",
+    "requirements": [
+      "方案要能落地",
+      "要考虑时间、人手、预算",
+      "输出要便于直接执行"
+    ]
+  },
+  "hidden_reference": {
+    "dimension_focus": {
+      "clarity_output": 24,
+      "structuring": 28,
+      "context_constraints": 28,
+      "gap_risk": 10,
+      "iteration_acceptance": 10
+    },
+    "ideal_elements": [
+      "明确活动目标和对象",
+      "补充资源和约束",
+      "定义输出模块",
+      "要求列出风险与假设"
+    ],
+    "completion_criteria": [
+      "Prompt 体现了活动目标、资源约束和方案结构"
+    ],
+    "notes_for_evaluator": "不要只看“做方案”几个字，要看用户是否把方案任务拆开。"
+  }
+}

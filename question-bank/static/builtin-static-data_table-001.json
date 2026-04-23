@@ -1,0 +1,44 @@
+{
+  "id": "builtin-static-data_table-001",
+  "source": "builtin",
+  "assessment_mode": "static",
+  "task_type": "data_table",
+  "scope_fit": [
+    "fun",
+    "full"
+  ],
+  "title": "把混乱销售数据整理任务写成结构化 Prompt",
+  "version_info": {
+    "question_schema_version": "question-schema-v1",
+    "question_version": "q-1",
+    "rubric_version": "rubric-v1",
+    "generator_version": null
+  },
+  "visible_prompt": {
+    "task": "你要让 AI 帮你整理一份格式混乱的销售明细表。",
+    "requirements": [
+      "结果需要适合继续做统计",
+      "要标记异常值",
+      "要明确输出列"
+    ]
+  },
+  "hidden_reference": {
+    "dimension_focus": {
+      "clarity_output": 24,
+      "structuring": 26,
+      "context_constraints": 28,
+      "gap_risk": 12,
+      "iteration_acceptance": 10
+    },
+    "ideal_elements": [
+      "说明原表问题类型",
+      "定义标准列名",
+      "定义异常值处理方式",
+      "明确输出为表格或 CSV 结构"
+    ],
+    "completion_criteria": [
+      "Prompt 写清了输入问题、输出列和异常项处理规则"
+    ],
+    "notes_for_evaluator": "本题优先看结构化能力和输出格式定义。"
+  }
+}

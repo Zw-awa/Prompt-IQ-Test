@@ -1,0 +1,50 @@
+{
+  "id": "builtin-dynamic-agent_workflow-001",
+  "source": "builtin",
+  "assessment_mode": "dynamic",
+  "task_type": "agent_workflow",
+  "scope_fit": [
+    "full"
+  ],
+  "title": "驱动执行 AI 完成一个小仓库的发布前检查",
+  "version_info": {
+    "question_schema_version": "question-schema-v1",
+    "question_version": "q-1",
+    "rubric_version": "rubric-v1",
+    "generator_version": null
+  },
+  "visible_prompt": {
+    "task": "你需要和执行 AI 多轮协作，最终得到一个可执行的发布前检查清单与风险总结。",
+    "requirements": [
+      "不能把任务停留在泛泛建议",
+      "你需要推动执行 AI 明确范围、优先级和输出格式",
+      "结束前要确认结果是否足够发布前使用"
+    ]
+  },
+  "hidden_reference": {
+    "dimension_focus": {
+      "clarity_output": 16,
+      "structuring": 28,
+      "context_constraints": 20,
+      "gap_risk": 16,
+      "iteration_acceptance": 20
+    },
+    "ideal_elements": [
+      "用户先定义检查目标和边界",
+      "用户要求输出优先级和证据列",
+      "用户在过程中发现遗漏并补齐",
+      "用户在结束前进行验收"
+    ],
+    "completion_criteria": [
+      "执行 AI 输出了分级风险清单",
+      "用户明确了可交付结构并做过确认"
+    ],
+    "notes_for_evaluator": "本题权重更偏向结构化驱动和迭代验收。",
+    "task_done_signals": [
+      "用户明确检查范围",
+      "用户要求区分阻断项和一般项",
+      "执行 AI 输出带优先级的检查清单",
+      "用户对最终清单做确认或补充"
+    ]
+  }
+}

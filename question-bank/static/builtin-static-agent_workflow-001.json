@@ -1,0 +1,43 @@
+{
+  "id": "builtin-static-agent_workflow-001",
+  "source": "builtin",
+  "assessment_mode": "static",
+  "task_type": "agent_workflow",
+  "scope_fit": [
+    "full"
+  ],
+  "title": "把代码仓分析任务写成可交给 Agent 的 Prompt",
+  "version_info": {
+    "question_schema_version": "question-schema-v1",
+    "question_version": "q-1",
+    "rubric_version": "rubric-v1",
+    "generator_version": null
+  },
+  "visible_prompt": {
+    "task": "你要让一个代码 Agent 阅读仓库并给出发布前风险清单。",
+    "requirements": [
+      "不能只要泛泛而谈的总结",
+      "要定义检查范围",
+      "要定义输出格式和验收方式"
+    ]
+  },
+  "hidden_reference": {
+    "dimension_focus": {
+      "clarity_output": 20,
+      "structuring": 30,
+      "context_constraints": 24,
+      "gap_risk": 12,
+      "iteration_acceptance": 14
+    },
+    "ideal_elements": [
+      "定义检查目标和边界",
+      "定义输出模板",
+      "要求标注证据来源",
+      "要求区分阻断问题与一般问题"
+    ],
+    "completion_criteria": [
+      "Prompt 能让 Agent 有明确边界地工作，并产出可验收清单"
+    ],
+    "notes_for_evaluator": "本题重点观察结构化分工与结果验收意识。"
+  }
+}

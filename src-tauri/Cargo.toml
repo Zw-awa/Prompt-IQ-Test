@@ -2,7 +2,7 @@
 name = "prompt_iq_test"
 version = "0.1.0"
 description = "Local-first desktop app for evaluating LLM and agent driving skill."
-authors = ["Prompt IQ Test Contributors"]
+authors = ["Zw-awa"]
 license = "Apache-2.0"
 repository = ""
 edition = "2021"
@@ -23,3 +23,11 @@ serde = { version = "1.0", features = ["derive"] }
 log = "0.4"
 tauri = { version = "2.10.3" }
 tauri-plugin-log = "2"
+directories = "5.0"
+chrono = { version = "0.4", features = ["serde"] }
+thiserror = "1.0"
+anyhow = "1.0"
+rusqlite = { version = "0.32", features = ["bundled"] }
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
+tokio = { version = "1.0", features = ["full"] }
+uuid = { version = "1.0", features = ["v4"] }

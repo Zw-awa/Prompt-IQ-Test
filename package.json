@@ -2,6 +2,7 @@
   "name": "prompt-iq-test",
   "private": true,
   "version": "0.1.0",
+  "author": "Zw-awa",
   "description": "Local-first desktop app for evaluating how well users drive LLMs and agents.",
   "type": "module",
   "scripts": {

@@ -114,6 +114,7 @@ The first release does not aim to include:
 
 ## Open Source
 
+- Copyright 2026 Zw-awa
 - License: `Apache-2.0`
 
 ## Repository Notes

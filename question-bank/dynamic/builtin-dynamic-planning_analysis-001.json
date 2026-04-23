@@ -1,0 +1,51 @@
+{
+  "id": "builtin-dynamic-planning_analysis-001",
+  "source": "builtin",
+  "assessment_mode": "dynamic",
+  "task_type": "planning_analysis",
+  "scope_fit": [
+    "fun",
+    "full"
+  ],
+  "title": "驱动执行 AI 产出一份校园工作坊方案",
+  "version_info": {
+    "question_schema_version": "question-schema-v1",
+    "question_version": "q-1",
+    "rubric_version": "rubric-v1",
+    "generator_version": null
+  },
+  "visible_prompt": {
+    "task": "你需要和执行 AI 多轮协作，最终拿到一份可落地的校园 AI 工作坊执行方案。",
+    "requirements": [
+      "最终结果要包含目标、流程、资源、风险",
+      "执行 AI 初始并不知道全部背景，你需要自己推动补全",
+      "结束前你需要确认结果是否可执行"
+    ]
+  },
+  "hidden_reference": {
+    "dimension_focus": {
+      "clarity_output": 18,
+      "structuring": 24,
+      "context_constraints": 24,
+      "gap_risk": 16,
+      "iteration_acceptance": 18
+    },
+    "ideal_elements": [
+      "用户主动补充活动对象和约束",
+      "用户把任务拆成目标、流程、资源、风险",
+      "用户推动执行 AI 输出可验收结构",
+      "用户在末轮做最终确认"
+    ],
+    "completion_criteria": [
+      "执行 AI 输出了结构完整的方案",
+      "用户补充了关键约束并做了收尾验收"
+    ],
+    "notes_for_evaluator": "动态过程中不能因为执行 AI 主动给出方案就直接高分，要看用户是否真正驱动。",
+    "task_done_signals": [
+      "用户明确活动对象",
+      "用户补充时间、人手或预算约束",
+      "执行 AI 输出包含流程和资源分配的方案",
+      "用户进行了最终确认或要求修正"
+    ]
+  }
+}

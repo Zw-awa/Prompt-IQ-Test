@@ -126,6 +126,26 @@ export function HomePage({
       </PageSection>
 
       <PageSection
+        title="其他入口"
+        description="即使没有配置 API，这些页面也都可以独立进入。"
+      >
+        <div className="inline-actions inline-actions--wrap">
+          <Link className="button button--secondary" to="/settings">
+            设置
+          </Link>
+          <Link className="button button--secondary" to="/about">
+            关于
+          </Link>
+          <Link className="button button--secondary" to="/plugins">
+            插件商场
+          </Link>
+          <Link className="button button--secondary" to="/vent">
+            发泄小游戏
+          </Link>
+        </div>
+      </PageSection>
+
+      <PageSection
         title="本地优先说明"
         description="程序本身不上传你的配置和记录，但第三方模型服务商仍可能处理你发送给它的请求。"
       >
